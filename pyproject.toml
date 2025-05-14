@@ -4,4 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "click>=8.2.0",
+    "dotenv>=0.9.9",
+]
+
+[tool.uv.workspace]
+members = [
+    "sample/echo-agent",
+    "summarizer_agent",
+]
